@@ -1,0 +1,2 @@
+class Mulher < ApplicationRecord
+end

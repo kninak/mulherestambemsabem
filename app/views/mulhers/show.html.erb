@@ -1,0 +1,19 @@
+<h3> <%= @mulher.nome %> </h3>
+<dl>
+
+<dt><b>email:</b>
+<%= @mulher.email %></dt>
+
+<dt><b>formação:</b>
+<%= @mulher.formacao %></dt>
+
+<dt><b>temas:</b>
+<%= @mulher.temas %></dt><br>
+
+<button>
+<%= link_to "voltar", root_path %>
+</button>
+
+<button>
+<%= link_to "editar", edit_mulher_path %>
+</button>

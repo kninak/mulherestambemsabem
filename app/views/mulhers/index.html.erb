@@ -1,0 +1,15 @@
+
+<ul>
+<% @mulhers.each do |mulher| %>
+
+<li>
+<%= link_to mulher.nome, mulher %>
+</li>
+
+<% end %>
+
+</ul>
+
+<button>
+<%= link_to "cadastre-se", new_mulher_path %>
+</button>

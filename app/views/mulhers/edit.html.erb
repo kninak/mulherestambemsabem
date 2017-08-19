@@ -1,0 +1,25 @@
+<h4> Edite as informações</h4>
+
+<%= form_for @mulher do |f| %>
+	
+    <%= f.label :nome %>
+	<%= f.text_field :nome %><br>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+
+    <%= f.label :formacao, "formação" %>
+    <%= f.text_field :formacao %><br>
+
+	<%= f.label :temas %>
+    <%= f.text_field :temas %><br>
+
+   
+    <%= f.submit "atualizar" %>
+    <% end %><br>
+	
+	<button>
+	<%= link_to "voltar", root_path %>
+	</button>
+
+	

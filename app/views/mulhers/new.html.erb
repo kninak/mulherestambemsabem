@@ -1,0 +1,23 @@
+<h3>faça parte do projeto<h3>
+
+<%= form_for Mulher.new do |f| %>
+	
+    <%= f.label :nome %>
+	<%= f.text_field :nome %><br>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+
+    <%= f.label :formacao, "formação" %>
+    <%= f.text_field :formacao %><br>
+
+	<%= f.label :temas %>
+    <%= f.text_field :temas %><br>
+
+   
+    <%= f.submit "cadastrar" %>
+    <% end %><br>
+	
+	<button>
+	<%= link_to "voltar", root_path %>
+	</button>
